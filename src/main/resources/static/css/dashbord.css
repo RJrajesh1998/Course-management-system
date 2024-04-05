@@ -1,0 +1,128 @@
+
+
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Header Navigation Styles */
+#sec1{
+    display: flex;
+    height:100vh;
+    width:100vw;
+    flex-direction: column;
+
+}
+.header-nav {
+    
+    padding: 17px;
+    background-color:#071e67;
+    background-attachment: fixed;
+   display: flex;
+}
+.sec2{
+    height:9vh;
+    width: 100%;
+position: sticky;
+box-shadow:rgb(218 220 238 / 20%) -1px 2px 20px 7px;
+}
+.table-div{
+    
+    flex:1;
+    
+}
+.tab-sec{
+    
+ display: flex;
+
+    
+}
+
+/* Navigation Title Styles */
+.nav-title {
+    color: rgb(249, 241, 241);
+    font-size: 18px;
+    font-weight:bold;
+    display:flex;gap:10px;
+    ;
+}
+.dash-colums{
+    margin-top: 20px;
+    padding :30px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:#071e67;
+    box-shadow: 0 0 5px #071e67;
+}
+i{
+    margin-top: 4px
+}
+
+/* Hover Styles for Navigation Title */
+.nav-title:hover {
+    color: rgb(255, 255, 0);
+}
+
+/* Navigation Column Styles */
+.nav-col-section {
+    display:grid;
+
+
+
+}
+.input-field input{
+    height:35px;
+    width:400px;
+    border-radius: 3px;
+    border:1px solid rgb(228, 228, 238);
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 17px;
+  
+}
+
+
+.input-field {
+font-size: 25px;
+font-weight: bold;
+color:rgb(255,255,255);
+}
+input:focus{
+    outline :none;
+}
+.header-second-div{
+    width:300px;
+    
+    background-color:#071e67;
+    
+    box-shadow:rgb(218 220 238 / 20%) -1px 2px 20px 7px;
+    /* border-radius: 30px; */
+}
+
+/* Navigation Button Styles */
+.hover-bg-warning:hover {
+    background-color: #d7cd0e ;
+    color:#d7cd0e;
+  }
+  .btn{
+    width:100%;
+  }
+  .color_boxes{
+  width:500px;
+  height:100%;
+  }
+    .colo a:hover {
+    color: red;
+     background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );
+  }
+  .color_boxes_div{ 
+  width:100%px;
+  height:250px;
+  box-shadow:rgb(218 220 238 / 20%) -1px 20px 20px 20px;
+  }
+  
+  

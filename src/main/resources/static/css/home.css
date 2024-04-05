@@ -1,0 +1,410 @@
+@charset "UTF-8";
+@import url("fragment.css");
+
+
+/* Reset default margin and padding for all elements */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Header Navigation Styles */
+.header-nav {
+    height: 80px;
+    width: 100%;
+    background-color:#071e67;
+    background-attachment: fixed;
+    
+}
+
+/* Navigation Title Styles */
+.nav-title {
+    color: rgb(205, 205, 205);
+    font-size: 15px;
+    font-weight:bold;
+}
+
+/* Hover Styles for Navigation Title */
+.nav-title:hover {
+    color: rgb(255, 255, 0);
+}
+
+/* Navigation Column Styles */
+/* .nav-col-section {
+    display:grid;
+    
+    align-content: space-around;
+
+
+} */
+/* .header-second-div{
+    width:90%;
+} */
+
+/* Navigation Button Styles */
+ .nav-btn {
+    font-size: 15px;
+    box-sizing: border-box;
+    
+    width: 140px;
+   padding-top: 8px;
+   height:40px;
+} 
+ .login-btn{
+margin: 20px;
+height:40px;
+} 
+
+
+
+ .nav-btn-btn2 a{
+font-size:18px;
+    
+   
+   background-color:red;
+    width: 140px;
+  
+   height:30px;
+   
+border-radius:5px;
+padding:8px 20px 8px 20px ;
+ text-align:center;
+
+} 
+ .login-btn-btn2 a{
+  width: 140px;
+
+height:30px;
+background-color:blue;
+
+border-radius:5px;
+text-align:center;
+ box-sizing: border-box;
+font-size:18px;
+padding:8px 30px 8px 30px;
+ 
+
+} 
+#items .col a:hover{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Section 2 Styles */
+.sec-2 {
+    background-image: url("/images/slider_bg.jpg");
+    height: 800px;
+    width: 100%;
+    
+}
+
+/* Carousel Image Styles */
+.img-carosil {
+    background-image: url("/images/snowpark-home-slider-background.jpg");
+    height: 700px;
+    width: 100%;
+    
+}
+
+/* Call Section Styles 
+.call-section {
+    background-image: url("/images/snowpark-home-slider-background.jpg");
+    background-repeat: no-repeat;
+    height: 157px;
+    width: 100%;
+}*/
+
+/* Call Section Container Styles */
+.call-div {
+    max-width: 70%;
+    
+    background-image: url("/images/si-call-back-bg.jpg");
+    height: 600px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 40px 30px 30px;
+  
+}
+
+/* Call Section Content Styles */
+.call-div2 {
+    box-sizing: border-box;
+    padding: 40px;
+    color: #3d10a5;
+    margin: 0px auto 60px;
+}
+
+/* Call Button Styles */
+.call-btn {
+    background-color: rgb(47, 255, 78);
+    width: 400px;
+}
+
+/* List Item Styles in Call Section */
+.call-section ul li {
+   
+    display: flex;
+    margin: 27px 27px 27px 0px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Call Section Heading Styles */
+.call-div3-heading {
+    font-family: "Viga", Arial, Tahoma, sans-serif;
+    color: #000c81;
+}
+
+/* Image Div Styles */
+.img-div {
+    height: 175px;
+    width: auto;
+}
+
+/* Image Styles in Image Div */
+.img-div img {
+    margin-top: 25px;
+    height: 100px;
+    width: 300px;
+    clear: both;
+}
+
+/* Text Footer Styles in Image Div */
+.img-div .text-footer {
+    color: white;
+}
+
+/* Buttons Section Styles */
+.btns {
+    width: 1100px;
+    height: 50px;
+}
+
+/* Scope Know Head Home Styles */
+.scope_know_head_home {
+    height: 1400px;
+    background-repeat: no-repeat;
+      
+    background-size: cover;
+}
+
+/* Scope Know Head Home Div 1 Styles */
+.scope_know_head_home_div1 {
+    height: 100px;
+    word-wrap: break-word;
+    width: auto;
+    background-color: rgb(0, 0, 0, 0.);
+    
+}
+
+/* Scope Know Head Home Div 2 Styles */
+.scope_know_head_home_div2 {
+    text-indent: 0px 25px;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+/* Section 1 Styles */
+.sc_1 {
+    font-size: 50px;
+    color: #1a034f;
+}
+
+/* Footer Training Words Styles */
+.footer-traing-words {
+    height: 550px;
+    
+}
+
+/* Big Text Styles in Footer Training Words */
+.big-text {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer Training Words Image Styles */
+.footer-traing-words img {
+    height: 70px;
+    width: 120px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+/* Hover Effect on Footer Training Words Image */
+.footer-traing-words img:hover {
+    border-bottom: 3px solid rgb(56, 164, 56);
+}
+
+/* Scope Know Home Bottom Styles */
+.scope_know_home_bottom {
+    background-image: url("/images/snowpark-home-slider-background.jpg");
+    height: 900px;
+    background-size: cover;
+}
+
+/* Scope Know Home Percent Styles */
+.scope_know_home_percent {
+    background-image: url("/images/snowpark-home-slider-background.jpg");
+    height: 200px;
+    width: 100.8%;
+    background-size: cover;
+}
+
+/* Text Success Styles */
+.text-succ {
+    color: rgb(236, 243, 236);
+    font-size: 50px;
+}
+
+
+
+/*nav section nav section nav se tion nav seacryepddafjfdddfygubhjccbje*/
+#hamburger_nav {
+    display: none; /* Hide initially */
+    height:500px;
+    width:200px;
+    
+  }
+  #hamburger_nav i {
+    margin-top:15px;
+    /* Set width and height for the icon */
+    font-size: 40px; /* Example font size */
+   /* Inherit height from the parent div */
+   transition: transform 0.3s ease; 
+   cursor: pointer;
+   color:white;
+  }
+  #hamburger_nav:hover i {
+    transform: scale(1.1); /* Scale up the icon on hover */
+  }
+  #items.active {
+    display: block;
+    opacity: 1;
+}
+  #items{
+  position: absolute;
+  top: 78px;
+  right: 0px;
+  width: 200px;
+  height: 100px;
+  font-size: 18px;
+  flex-direction: column;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  font-weight: bold;
+}
+#items a{
+    color:white;
+    text-decoration: none;
+    
+}
+  #items {
+    display: none; /* Hide initially */
+    
+    background-color:#071e67;
+    height:400px;
+    width:250px;
+    display:grid;
+   
+   padding:25px;
+   line-height:50px
+}
+
+#hamburger_nav .active #items {
+    display: block; /* Show when active */
+}
+
+  
+
+
+
+@media only screen and (max-width: 992px) {
+	.header_nav{
+	font-size:12px;
+	}
+
+
+    .nav-btn {
+        font-size: 10px;
+        box-sizing: border-box;
+        height: 30px;
+        width: 100px;
+        margin-right: 15px;
+    } 
+    .nav-column{
+        gap: 30px;
+        font-size: 10px;
+    }
+    
+    .call-div{
+        background-image: url("/images/si-call-back-bg.jpg");
+    height: 1000px;
+    }
+       .discuss-your-career{
+   background-image:"/images/scope-india-lets-discuss-your-career.jpg";
+        height:450px ;
+        width:auto;
+    }
+    
+     .btn{
+ 
+ width:700px;
+ } 
+ .scope_know_head_home {
+    height: 1600px;
+}
+
+ #hamburger_nav {
+      display: block; /* Show when screen width is below 992px */
+    }
+    .header_i{
+        display:none;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+.scope_know_head_home {
+    height: 1600px;
+}
+ .btn{
+ 
+ width:500px;
+ }   
+  	.sec-2 {
+    background-image: url("/images/slider_bg.jpg");
+    height: 600px;
+    width: auto;
+    
+}
+
+
+   .discuss-your-career{
+   background-image:"/images/scope-india-lets-discuss-your-career.jpg";
+        height:350px ;
+        width:auto;
+    }
+     .scope_know_head_home {
+    height: 1950px;
+}
+}
+
+@media only screen and (max-width: 600px){
+.scope_know_head_home {
+    height: 2000px;
+}
+}
+
+/* /*  @media (max-width: 600px) {
+            .container {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+            
+            
+        } */ 

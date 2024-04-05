@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link th:href="@{/css/course.css}" href="/css/course.css" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/home.css}" href="/css/home.css" rel="stylesheet" type="text/css" />
+    
+    
+</head>
+<body class="course-top ">
+
+<div th:replace="fragments/fragment :: header"></div>
+    <Section>
+        <div class="container course-top-div1 d-grid gap-1 ">
+            <div class="course-top-div2 "><h1 class="text-warning fw-bold text-center">SCOPE INDIA</h1>
+                <h1 class="text-warning text-center fw-bolder " style="font-size: 50px;">Our Training Programs</h1>
+                <h5 class="text-light text-center">All Trainers are working professionals, Software Engineers,
+                    Networking Engineers, and Software Test Engineers<br>
+                    of Suffix E Solutions with</h5>
+                    
+                    <h1 class="text-warning text-center">17 years of Industrial experience.</h1>
+            </div>
+           <div>
+            <div class="text-center course_image"><img th:src="@{/images/scope-india-full-stack-offer-feb0slip2024.jpg}" alt="" height="450px"
+                    width="800px">
+            </div>
+            
+             <div class="text-center">
+    <a href="" class="text-decoration-none">
+        <img th:src="@{/images/5star.png}" alt="" class="img-fluid" style="max-height: 100px; width: auto; margin: 0 auto;">
+        <p class="text-light fw-bolder">Google 4.9 * Rated Institute</p></a>
+    </div>
+    
+        </div>
+        </div>
+
+    </Section>
+
+    <!-- course-center course-center course-center -->
+    <section class="mt-5">
+        <div class="container course-center text-dark fs-5">
+            <h1 class="text-light">Software Programming Courses</h1>
+            <div>
+                <div class="row  gap-4 course-section m-auto">
+                    <div class="col-4">
+                        <h6>Java Full Stack Internship</h6>
+                    </div>
+                    <div class="col-4">
+                        <h6>Python Full Stack Internship</h6>
+                    </div>
+                    <div class="col-3">
+                        <h6>PHP Full Stack Internship</h6>
+                    </div>
+                    <div class="col-4">
+                        <h6>.Net Core Full Stack Internship</h1>
+                    </div>
+                    <div class="col-4">
+                        <h6>MERN Full Stack Internship</h6>
+                    </div>
+                    <div class="col-3">
+                        <h6>MEAN Full Stack Internship</h6>
+                    </div>
+                    <div class="col-4">
+                        <h6>Android/iOS Mobile App <br>Course in Google Flutter</h6>
+                    </div>
+                    <div class="col-4">
+                        <h6>Android/iOS Mobile App <br>Course in IONIC</h6>
+                    </div>
+                    <div class="col-3">
+                        <h6>Website Designing Course</h6>
+                    </div>
+                </div>
+
+                <h1 class="text-light p-2">Software Testing Courses</h1>
+
+                <div class="row  gap-4 course-section m-auto">
+                    <div class="col-4  ">
+                        <h6>Software Testing Advanced <br>Course</h6>
+                    </div>
+                </div>
+
+                <h1 class="text-light">Networking, Server, & Cloud</h1>
+
+                <div class="row  gap-4 course-section m-auto">
+                    <div class="col-4">
+                        <h6>Networking, Server, & Cloud<br> Administration</h6>
+                    </div>
+
+                    <div class="col-4">
+                        <h6>AWS Architect Associate
+                        </h6>
+                    </div>
+                    <div class="col-3">
+                        <h6>Ms Azure Cloud Administrator</h6>
+                    </div>
+                    <div class="col-4">
+                        <h6>Red Hat Certified System Administrator (RHCSA)</h1>
+                    </div>
+                    <div class="col-4">
+                        <h6>Red Hat Certified Engineer (RHCE)</h6>
+                    </div>
+                    <div class="col-3">
+                        <h6>DevOps Engineer</h6>
+                    </div>
+                </div>
+
+                <h1 class="text-light">Other Courses</h1>
+                <div>
+                    <div class="row  gap-4 course-section m-auto ">
+                        <div class="col-4  ">
+                            <h6 class="">Data Science</h6>
+                        </div>
+                        <div class="col-4">
+                            <h6>Data Analytics
+                            </h6>
+                        </div>
+                        <div class="col-3">
+                            <h6>Digital Marketing Expert
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+     <div class="container">
+    <div  th:replace="fragments/fragment :: mailsend"></div>
+    </div>
+    <!-- call-div call-div call-div call-div 
+   
+ 
+        
+    </section>-->
+    <div class="maxxxx ">
+<div th:replace="fragments/fragment :: percentage"></div>
+</div>
+
+
+             <div th:replace="fragments/fragment :: snowimage"></div>
+
+<div th:replace="fragments/fragment :: footer"></div>
+
+
+<script  src="" th:src="@{js/hamberger.js}"></script>
+</body>
+
+</html>

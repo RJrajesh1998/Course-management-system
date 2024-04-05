@@ -1,0 +1,42 @@
+.body {
+    background: #7ec868;
+  }
+  
+/*   .form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8;
+  } */
+  
+  .profile-button {
+    background-color: #BA68C8;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .profile-button:hover {
+    background-color: #682773;
+  }
+  
+  .profile-button:focus {
+    background-color: #682773;
+    box-shadow: none;
+  }
+  
+  .profile-button:active {
+    background-color: #682773;
+    box-shadow: none;
+  }
+  .arrow-mark{
+  border:3px solid linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  color:white;
+  border-radius:50%;
+  width:40px;
+  padding:7px 7px 7px 7px;
+  height:40px;
+  }
+  
+  .back:hover {
+    color: #682773;
+    cursor: pointer;
+  }

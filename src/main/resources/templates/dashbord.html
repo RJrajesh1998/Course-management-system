@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link th:href="@{/css/dashbord.css}" href="/css/dashbord.css" rel="stylesheet" type="text/css" />
+     
+            <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/navbars/navbar-1/assets/css/navbar-1.css">
+</head>
+
+
+
+<!-- th:fragment="header" -->
+
+<body class="">
+    <section id="sec-1 " >
+        <div class="sec2">
+          <div class="   header-nav text-light   ">
+     
+              <!-- <span class=""></span></div> -->
+              <div class="col-3 fs-3  text-start " style="padding-left: 25px;"><a class="text-decoration-none text-light" href="/dashbord" ><i class="fa-solid fa-gauge fs-3 ml-3"></i><span>Dhashbord</span></a></div>
+               
+          
+<!--           <div class="col-7 input-field d-flex "><span style="background-color:orange;font-size:13px;height:35px;width:40px;text-align: center;margin-top:  4px;border-radius: 3px;padding:8px"><i class="fa-solid fa-magnifying-glass"></i></span></i><span>
+            <input  type="text" placeholder="search cources"></span></div>
+            <div class="col "  ><i class="fas fa-user "></i>
+            </div></div> -->
+
+<div class="fs-4 " style="font-family:arial">
+<nav class="navbar navbar-expand-md  bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+    <div class="container">
+            <div class="nav-item dropdown "  >
+              <a class="nav-link dropdown-toggle " href="#!" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">ScopeIndia</a>
+              <ul class="dropdown-menu  bsb-zoomIn " aria-labelledby="servicesDropdown"style="height:250px;width:200px;background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );" >
+                <li class="colo"><a class="dropdown-item fs-5 text-light" href="/home">Home</a></li>
+                <li class="colo"><a class="dropdown-item fs-5 text-light" href="/course">Course</a></li>
+                <li class="colo"><a class="dropdown-item fs-5 text-light" href="/knowscopeindia">KnowScope</a></li>
+                <li class="colo"><a class="dropdown-item fs-5 text-light" href="/contact">Contacts</a></li>
+                <li class="colo"><a class="dropdown-item fs-5 text-light" href="/register">Register</a></li>
+              </ul>
+            </div>
+               
+      </div>
+  </nav>
+</div>
+       
+            
+      </div>
+
+
+
+         
+ <div class="  tab-sec ">
+
+  <div class="  text-light  header-second-div " >
+
+    <div class="row  d-grid text-center justify-content-center align-items-center" style="height:100px;">
+        <img th:src="@{/images/scope-india-logo-bird.png}" alt="" height="50px" width="55px"></div>
+    <div class="col   justify-content-center    align-items-center  nav-col-section" style="height:451px;margin-bottom: 200px;">
+    <h5>Welcome, <span th:text="${userName}"></span>!</h5>
+    
+    
+      <div class="col" ><a class="text-decoration-none nav-title" href="/table"><i class="fa-brands fa-searchengin"></i><span>Search courses</span></a></div>
+      <div class="col" ><a class="text-decoration-none nav-title" href=""><i class="fa-solid fa-key"></i><span>Piked Courses</span></a></div>
+      <div class="col "  ><a class="text-decoration-none nav-title" href="/editprofile"><i class="fas fa-user"></i><span>Profile Edit</span></a></div>
+      <div class="col" ><a class="text-decoration-none nav-title" href="/changepassword"><i class="fa-solid fa-key"></i><span>Change Password</span></a></div>
+      
+<!-- <form id="logoutForm" action="/logout" method="post" style="display: none;">
+    Add CSRF token if your application is using CSRF protection
+    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+</form> -->
+
+<div class="col">
+    <a class="text-decoration-none nav-title" href="/logout"> <!-- onclick="event.preventDefault(); document.getElementById('logoutForm').submit();" -->
+        <i class="fa-solid fa-right-from-bracket"></i> Logout
+    </a>
+</div>
+    
+    
+    </div>
+</div>
+
+   <div class="container">
+        <div class="row ">
+        <div class=" table-div pt-2 color_boxes">
+          <div class="col-sm text-center text-light fw-bolder p-5 color_boxes_div" style="background-color: #00CED1;margin:40px;border-radius:5px">
+              <h1>Students</h1>
+              <h3>Total Students</h3>
+             <h3>300+</h3>
+              </div>
+          </div>
+          <div class="table-div pt-2 color_boxes">
+          <div class="col-sm  text-center text-light fw-bolder p-5 color_boxes_div" style="background-color:#17B169;margin:40px;border-radius:5px">
+                <h1>Courses</h1>
+                <h3>Available Courses</h3>
+                <h5>25+ courses</h5></div>
+          </div>
+          <div class="table-div pt-2 color_boxes">
+          <div class="col-sm text-center text-light fw-bolder p-5 color_boxes_div" style="background-color:#0066b2;;margin:40px;border-radius:5px">
+             <h1>Placement Results</h1>
+  <h3>Recent Placement</h3>
+  <h5>97%</h5>
+  </div>
+  </div>
+  
+  
+  
+  
+      <div class=" pt-2 ">
+                            <div class="col-sm text-center text-light fw-bolder p-5 "
+                                style="background-color:#0066b2;;margin:40px;border-radius:5px;height:300px">
+                                <h1>Placement Results</h1>
+                                <h3>Recent Placement</h3>
+                                <h5>97%</h5>
+                            </div>
+                        </div>
+  
+  
+  
+          </div>
+  
+        </div>
+    
+  </div>
+  
+  
+  
+
+      
+
+
+       
+      </section>
+
+
+
+    
+
+</body>
+
+
+
+</body>
+
+</html>
+  

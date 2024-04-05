@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url("home.css");
+@import url("fragment.css");
+@import url("register.css");
+
+
+
+/* Contact Top Section */
+.contact_top {
+    background-image: url("/images/snowpark-skis-headerbg2.jpg");
+    height: 1200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  
+}
+
+/* Contact Top Text */
+.con-text {
+    font-size: 50px;
+}
+
+/* Call Section */
+.contact-call-div {
+    width: 100%;
+    background-image: url("/images/si-call-back-bg.jpg");
+    height: 600px;
+    box-sizing: border-box;
+    padding: 40px 30px 30px;
+    margin-top:0px;
+   
+    
+} 
+
+/* Call Section Styling */
+
+
+/* Call Section List Items Styling */
+.call-section ul li {
+    
+    
+    margin: 27px 27px 27px 0px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Call Section Heading Styling */
+.call-div3-heading {
+    font-family: "Viga", Arial, Tahoma, sans-serif;
+    color: #000c81;
+}
+
+/* Call Button Styling */
+.call-btn1 {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Call Button Link Styling */
+.call-btn1 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Locations Styling */
+.kerala-tvm {
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Location Section Styling */
+.location-div {
+    background-image: url("/images/snowpark-home-slider-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 950px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  
+    .call-div-next-div{
+        display:flex;
+        flex-direction: column;
+    }
+    .contact-call-div {
+        width: 80%;
+        background-image: url("/images/si-call-back-bg.jpg");
+        height: 950px;
+        box-sizing: border-box;
+        
+    }
+    .discuss-your-career{
+        height:375px ;
+        width:auto;
+    }
+    .contact_top  {
+height:1500px;
+width:auto;
+    }
+    .call-section ul li{
+    width:90%;
+    }
+    .heading{
+    font-size:15px;}
+    .location-div {
+    background-image: url("/images/snowpark-home-slider-background.jpg");
+    height: 1700px;
+    width: 100%;
+    }
+    .location-div {
+   
+    margin-top: 0px;
+}
+    
+
+    }
+    
+    
+    
+
+@media (max-width: 400px) {
+    .container.col.d-flex {
+        flex-direction: column;
+    }
+    .call-div3 {
+        margin-top: 20px; /* Adjust as needed */
+    }
+}
+
+
+

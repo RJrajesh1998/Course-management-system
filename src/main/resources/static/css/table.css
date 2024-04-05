@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.table_main_div{
+	height:610px;width:82vw;
+}
+.table_sub_div{
+	margin:48px 0px 48px 96px;
+}
+.search_bar{
+	background-color:orange;
+	font-size:20px;
+	height:49px;
+	width:60px;
+	color:weight;
+	text-align: center;
+	border-radius: 3px;
+	padding:11px 15px 15px 15px;
+	margin-top:0px
+}
+.button{
+	height:49px;
+	width:150px;
+	border:none;
+	color:orange;
+	border-radius: 3px;
+	font-size:20px;
+}
+
+.scroll_div{
+	height:530px;
+	overflow:scroll;
+	scrollbar-width: none; 
+    -ms-overflow-style: none;
+     width:100%;
+}

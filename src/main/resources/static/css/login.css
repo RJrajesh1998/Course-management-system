@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+#login-section{
+	
+
+background-image:url("/images/slider_bg.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:end;
+height:100vh;
+width:100%;
+}
+.login-div{
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,214,243,1) 0%, rgba(0,212,255,1) 100%);
+height:600px;
+width:450px;
+padding:20px;
+font-weight:bolder;
+font-size:20px;
+border:5px solid white;
+border-radius:5px;
+
+}
+.login-div input{
+	 box-sizing: border-box;
+	border-radius:5px;
+	margin:10px;
+	padding:5px;
+	text-align:start;
+}
+p{
+	font-size:17px;
+	/*  font-weight: normal; */
+}
+.input_main{
+	width:90%;
+}
+.login-div label{
+	margin:10px;
+	text-align:start;
+	font-size:25px;
+}
+.login_div2{
+ margin-left:70px;	
+ font-size:20px;
+}
+
+.submit{
+	margin:40px 40px 40px 130px;
+	border-radius:5px;
+	width:100px;
+}

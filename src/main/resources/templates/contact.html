@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link th:href="@{/css/contact.css}" href="/css/contact.css" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/home.css}" href="/css/home.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div th:replace="fragments/fragment :: header"></div>
+
+
+    <section class="contact_top">
+        <div class="container justify-content-center d-grid gap-3" style="padding-top:150px;text-indent: 0px 50px;line-height:25px;text-align:justify;letter-spacing: 1px">
+            <h1 class="con-text text-center text-warning fw-bolder">SCOPE INDIA, your career partner!</h1>
+            <h3 class="text-center text-light fw-bolder">Let's discuss your career, 24/7 free Consultation
+                </h3>
+
+    <div class="text-center" >
+    <a href="" class="text-decoration-none">
+        <img th:src="@{/images/5star.png}" alt="" class="img-fluid" style="max-height: 100px; width: auto; margin: 0 auto;">
+        <p class="text-light fw-bolder">Google 4.9 * Rated Institute</p></a>
+    </div>
+
+           <div class="call-section" th:fragment="mailsend">
+        
+                <div class="container   contact-call-div"  >
+                    <div class="container col d-flex call-div-next-div" >
+                      <div class="col " ><img th:src="@{/images/scope-india-lets-discuss-your-career.jpg}" alt="" height="500px" width="100%" ></div>
+                   
+                        <div class="call-div3">
+                        <ul class="call-div3-heading" >               
+                  <form action="/contact" method="POST">
+                        <li><p class="h3 text-success fw-bolder heading">GET A FREE CALL BACK</p></li>
+                        <li><input class="p-1 w-100  border border-dark" name="name" type="text" placeholder="enter your name"><br></li>
+                        <li><input class="p-1 w-100  border border-dark" name="course" type="text" placeholder="enter course name"><br></li>
+                        <li><input class="p-1 w-100  border border-dark" name="phone" type="tel" pattern="[0-9]{10,}" title="please enter 10 digit mobile number" placeholder="enter phone number"><br></li>
+                        <li><input class="p-1 w-100  border border-dark" name="gmail" type="email" placeholder="enter your email"><br></li>
+                        
+                        <li><input class="fw-bolder call-btn1 bg-success text-light text-center" type="submit" value="Send mail"></li>
+                    
+                  </form>
+                        </ul>
+                    </div>
+                    
+                  </div>  
+                </div>
+             </div>
+          </div>
+
+
+
+                
+                   
+ </section>
+
+
+
+  <section class="location-div">
+    <div th:replace="fragments/fragment :: location_boxes"></div>
+    </section>
+<div th:replace="fragments/fragment :: footer"></div>
+<script  src="" th:src="@{js/hamberger.js}"></script>
+</body>
+</html>

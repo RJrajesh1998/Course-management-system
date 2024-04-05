@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import url("home.css");
+
+
+.scope_know_head{
+    background-image: url("/images/snowpark-skis-headerbg2.jpg");
+    height:1000px;
+    
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size:cover;
+}
+.btns{
+    width:1100px;
+    height:50px;
+}
+.scope_know_center{
+    background-image: url("/images/snowpark-home-slider-background.jpg");
+    height:400px;
+    width:100.8%;
+    background-size:cover;
+    
+}
+.scope_know_snow{
+    background-image: url("/images/snowpark-home-slide-decoration-bottomm.png");
+    height:100px;
+    background-repeat: no-repeat;
+    margin-top:-100px;   
+}
+.scope_know_bottom{
+    background-image: url("/images/snowpark-home-slider-background.jpg");
+    height:600px;
+    background-size:cover;
+}
+.text-succ{
+    color:rgb(36, 216, 48);
+    font-size: 50px;
+
+}
+
+
+
+@media only screen and (max-width: 1112px) and (min-width: 900px) {
+    .scope_know_head{
+        height: 1200px;
+    }
+    .scope_know_head h3{
+        font-size: 40px;
+    }
+    .scope_know_head p{
+        font-size: 20px;
+    }
+    .btns {
+        width: 900px;
+        height: 50px;
+    }
+    .star-div-img{
+        height: 175px;
+        width: 300px;
+        margin-left: -6%;
+    }
+    .star-div p{
+        margin: 0px 6px 0px 0px;
+        font-size: 20px;
+    }
+    .scope_know_center{
+        height:600px;
+        width:50.8%;
+    }
+    .scope_know_head_next_div{
+        width:1100px;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+    .btns {
+        width: 700px;
+        height: 50px;
+    }
+
+    .scope_know_center{
+        height:800px;
+        width:50.8%;
+    }
+    .scope_know_center-div1 {
+font-size: 30px;
+margin-top: 100px;
+
+    }
+    .star-div-img{
+    height: 160px;
+    width: 251px;
+    margin-left: -7%;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width:600px ) {
+    .btns {
+        width: 599px;
+        height: 50px;
+    }
+    .scope_know_center{
+        height:500px;
+        width:25.8%;
+    }
+    .scope_know_center-div1 {
+padding:2px;
+margin:100px 3px 3px 3px;
+    }
+    h5{
+        font-size:20;
+    }
+    .star-div-img{
+        height: 160px;
+        width: 240px;
+        margin-left: -9%;
+    }
+}
+@media only screen and (max-width:600px ) {
+    .btns {
+        width: 400px;
+        height: 50px;
+    }
+    .scope_know_center{
+        height:900px;
+        width:15%;
+    }
+    .scope_know_center-div1 {
+        width: 300px;
+     margin: 181px 0px 200px 0px;
+
+    }
+    h5{
+        font-size: 14px; 
+    }
+    .star-div p{
+        margin: 0px 6px 0px 0px;
+        font-size: 12px;
+    } 
+    .star-div-img{
+        margin-left: -9%;
+        height: 115px;
+        width: 180px;
+    }
+    .scope_know_head {
+       font-size :12px;
+    }
+    .scope_know_head h3{
+        font-size: 20;
+    }
+    
+.scope_know_head_next_div{
+    width:300px;
+}.hello{
+    flex:0%;
+}
+}
+

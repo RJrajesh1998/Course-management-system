@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url("home.css");
+@import url("fragment.css");
+
+
+
+
+
+/* Header Styling */
+.register-header {
+    background-image: url("/images/snowpark-skis-headerbg2.jpg");
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Form Container Styling */
+.form-div {
+    background-color: antiquewhite;
+}
+
+/* Form Section Styling */
+.form-section-row {
+    height: 1000px;
+    background-color: rgba(236, 239, 237, 0.95);
+    width: 75%;
+    margin: auto;
+}
+.form-1section-media{
+    margin: 30px 0px 30px 0px;
+   
+}
+.form-2section-media{
+    margin: 30px 0px 30px 0px;
+   
+}
+/* Form Label Styling */
+form label {
+    font-weight: bolder;
+}
+
+/* Full Width Input Styling */
+.i-full {
+	 box-sizing: border-box;
+    width: 100%;
+    height:40px;
+    padding:10px;
+    
+    
+}
+.i-full:hover{
+	border:1px solid white;
+}
+
+.i-full:focus{
+	outline:0;
+}
+.error{
+	color:red;
+}
+
+
+
+
+/* Submit Button Styling */
+.i-full-submit {
+    background-color: rgb(23, 202, 62);
+    margin-top: 30px;
+    width: 100%;
+    border:none;
+    border-radius:5px;
+}
+
+/* Location Specific Styling - Kerala Trivandrum */
+.kerala-tvm {
+    box-sizing: border-box;
+    padding: 15px;
+    border:1px solid white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Location Div Styling */
+.location-div {
+    background-image: url("/images/snowpark-home-slider-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+.adjustment_left{
+	margin-left:60px;
+}
+
+
+@media only screen and (max-width:992px) {
+
+.media-div1{
+    flex:100%;
+    justify-content: center;
+}
+
+ .media-div2{
+
+        flex:100%;
+        justify-content: center;
+        margin:auto;  
+    }
+    .media-div3 {
+
+        flex:100%;
+        margin-bottom: 20px;      
+    }
+    .media-border{
+        border: 1px solid white;
+         flex:100%;
+        width:100%; 
+  
+    }
+    .media-div2{
+        margin-right: 110px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .form-section-row{
+        height: auto;
+        width:50%;
+        
+    }
+    .i-full{
+        width:50%;
+    }
+}    
+
+
+@media only screen and (max-width: 768px) {
+
+    .register-header {
+        background-image: url("/images/snowpark-skis-headerbg2.jpg");
+        height: auto;
+        width:100%;
+    }
+.form-center-row   {
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+    .form-1section-media {
+       width:50%;
+    }
+    
+    .form-2section-media{
+        width:50%;
+       
+
+    }
+    .location-div {
+        margin-top: 200px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

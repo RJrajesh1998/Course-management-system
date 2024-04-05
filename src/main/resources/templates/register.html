@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+                    >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link th:href="@{/css/register.css}" href="/css/register.css" rel="stylesheet" type="text/css" />
+    
+
+</head>
+<body>
+
+
+    
+<body class=" register-header">
+
+<div th:replace="fragments/fragment :: header"></div>
+  <section >
+    <div class=" container d-grid justify-content-center   ">
+      <div style="margin-top: 200px">
+        <h1 class="text-center text-warning">Registration</h1>
+        <h2 class="text-light">It's just a matter of 80 days to an IT job!</h2>
+      </div>
+    </div>
+
+    <div class="  row form-section-row mt-5"  >
+
+      <div class=" col d-flex justify-content-center gap-3  form-center-row" >
+         <div class="col-12 col-md-6 lh-lg form-1section-media" style="border: 2px solid rgb(5, 4, 4); padding: 20px;">
+
+
+
+
+          <form  action="/register"  th:object="${reg}" method="POST" id="myform" >
+          
+      <label for="fullname">Full Name (required)</label><br>
+        <input class="i-full" type="text" id="fullname" name="fullname" th:field="*{fullname}" required><br>
+        <p id="name_error" style="color:red"> </p>
+    
+        <label for="dob">Date of Birth (required)</label><br>
+        
+        
+        <input class="i-full" type="date" id="dob" name="dob" th:field="*{dob}" required><br>
+    
+        <label for="gender">Gender (required)</label><br>
+        <label class="circular-checkbox" for="male">Male
+            <input type="radio" id="male" name="gender" th:field="*{gender}" value="male" required>
+        </label>
+        
+        <label class="circular-checkbox" for="female">Female
+            <input type="radio" id="female" name="gender" th:field="*{gender}" value="female" required>
+        </label>
+        
+        <label class="circular-checkbox" for="other">Other
+            <input type="radio" id="other" name="gender" th:field="*{gender}" value="other" required>
+        </label><br>
+    
+        <label for="qualification">Educational Qualification</label><br>
+        <input class="i-full" type="text" id="qualification" th:field="*{qualification}" name="qualification"><br>
+    
+       <label for="course">Choose your course (required)</label><br>
+        <select class="form-control  i-full" type="select" id="course" name="course" th:field="*{course}" placeholder="Choose your course!" required><br>
+    <option value="">Choose your course!</option>
+    <optgroup class="text-dark" label="Software Programming Courses">
+    <option value="">PHP Full Stack</option>
+    <option value="">Python Full Stack</option>
+    <option value="">Java Full Stack</option>
+    <option value="">.Net Full Stack</option>
+    <option value="">MEAN Full Stack</option>
+    <option value="">MERN Full Stack</option>
+    <option value="">Data Science & AI (Python Guru)</option>
+    <option value="">Google Flutter Mobile App Development (iOS/Android)</option>
+    <option value="">Python Mastery (Python/Django/MySQL)</option>
+   
+  </optgroup>
+
+  <optgroup class="text-dark" label="Python Mastery (Python/Django/MySQL)">
+    <option value="">Software Testing Advanced (Manual/Automation)</option>
+    <option value="">Software Testing Manual (ISTQB)</option>
+    <option value="">ISTQB Certification (EXAM Reg.)</option>
+    <option value="">Selenium TestNG & Cucumber/Appium Mobile/QTP/Loadrunner/Jmeter/Jira</option>
+
+  </optgroup>
+
+  <optgroup class="text-dark" label="Others">
+    <option value="">Academic Project</option>
+    <option value="">MS Office (Word/Excel/Power Point/Outlook)</option>
+    <option value="">Data Analytics</option>
+    <option value="">Advanced MS Excel</option>
+    <option value="">Graphic Designing (Photoshop)</option>
+    <option value="">Graphic Designing (Photoshop/Illustrator)</option>
+    <option value=""></option>
+
+  </optgroup>
+
+        </select>
+
+        <label for="mobileNumber">Mobile Number (required)</label><br>
+        <input class="i-full" type="tel" id="mobileNumber" name="mobileNumber" th:field="*{mobileNumber}" required><br>
+        <p id="num_error" style="color:red"></p>
+    
+       <label for="email">Email (required)</label><br>
+        <input class="i-full" type="email" id="email" name="email" th:field="*{email}" required><br>
+        <p id="email_error" style="color:red"></p>
+    
+        <label for="guardianMobile">Guardian's Mobile</label><br>
+        <input class="i-full" type="tel" id="guardianMobile" name="guardianMobile" th:field="*{guardianMobile}"><br>
+        <p id="guar_num_error" style="color:red"></p>
+    
+        <label for="trainingMode">Training Mode</label><br>
+       <input type="radio" id="liveOnline" name="trainingMode"  th:field="*{trainingMode}" value="liveOnline">
+        <label for="liveOnline">Live Online</label>
+
+         <input type="radio" id="classroom" name="trainingMode" th:field="*{trainingMode}" value="classroom" >
+         <label for="classroom">Classroom</label><br>
+
+    
+         <label for="location">SCOPE INDIA Location (required)</label><br>
+         <input type="radio" id="technoparkTVM" name="location" th:field="*{location}" value="technoparkTVM" required>
+         <label for="technoparkTVM">TechnoparkTVM</label>
+         
+         <input type="radio" id="thampanoorTVM" name="location" th:field="*{location}" value="thampanoorTVM" required>
+         <label for="thampanoorTVM">ThampanoorTVM</label>
+         
+         <input type="radio" id="kochi" name="location" th:field="*{location}" value="kochi" required>
+         <label for="kochi">Kochi</label>
+         
+         <input type="radio" id="nagercoil" name="location" th:field="*{location}" value="nagercoil" required>
+         <label for="nagercoil">Nagercoil</label><br>
+         
+        <!--  <label for="password">password</label>
+                  <input type="text" id="password" name="password"  > -->
+         
+<!--          <label for="otp">Otp</label>
+                  <input type="text" id="otp" name="otp" th:field="otp" > -->
+         
+
+         </div>
+
+
+        <!-- <div class="col p-3 fw-bolder lh-lg   form-2section-media" style="border:2px solid black" th:object="${reg}"> -->
+<div class="col-12 col-md-6 p-3 fw-bolder lh-lg form-2section-media" style="border:2px solid black;" th:object="${reg}">
+
+        <label for="guardianName">Guardian's Name</label><br>
+        <input class="i-full" type="text" id="guardianName"  name="guardianName" th:field="*{guardianName}" required><br>
+        <p id="guardian_error" style="color:red"></p>
+    
+        <label for="guardianOccupation">Guardian's Occupation</label><br>
+        <input class="i-full" type="text" id="guardianOccupation"  name="guardianOccupation" th:field="*{guardianOccupation}" required><br>
+    
+        <label for="preferredTimings">Preferred Training Timings (required)</label><br>
+        <input type="radio" id="timings1" name="preferredTimings" th:field="*{preferredTimings}" value="7am-10am" required>
+        <label for="timings1">Between 7am - 10am</label><br>
+
+        <input type="radio" id="timings2" name="preferredTimings" th:field="*{preferredTimings}" value="9am-1pm" required>
+        <label for="timings2">Between 9am - 1pm</label><br>
+
+        <input type="radio" id="timings3" name="preferredTimings" th:field="*{preferredTimings}" value="1pm-6pm" required>
+        <label for="timings3">Between 1pm - 6pm</label><br>
+
+        <input type="radio" id="timings4" name="preferredTimings" th:field="*{preferredTimings}" value="6pm-10pm" required>
+        <label for="timings4">Between 6pm - 10pm</label><br>
+    
+        <label for="address">Address</label><br>
+        <input class="i-full" type="text" id="address" th:field="*{address}" name="address"><br>
+    
+       <label for="country">Country</label><br>
+        <input class="i-full" type="text" id="country" th:field="*{country}" name="country"><br>
+        <p id="country_error" style="color: red;"></p>
+    
+       <label for="state">State</label><br>
+        <input class="i-full" type="text" id="state" th:field="*{state}" name="state"><br>
+        <p id="state_error" style="color: red;"></p>
+    
+         <label for="city">City</label><br>
+        <input class="i-full" type="text" id="city" th:field="*{city}" name="city"><br>
+        <p id="city_error" style="color: red;"></p>
+    
+        <label for="zipCode">PIN/Zip Code</label><br>
+        <input class="i-full" type="text" id="zipCode" th:field="*{zipCode}" name="zipCode"><br>
+        <p id="zipCode_error" style="color: red;"></p>
+    
+        <input class="i-full i-full-submit pt-1" type="submit" value="Complete Registration >>">
+    </form>
+        </div>
+
+
+
+</div>
+    </div>
+
+      </div>
+    </div>
+
+    </div>
+
+
+
+    <section class="location-div">
+
+
+
+    <div th:replace="fragments/fragment :: location_boxes"></div>
+      <div th:replace="fragments/fragment :: footer"></div>
+    </section>
+  </section>
+  
+  
+  
+  <script  src="" th:src="@{js/register.js}"></script>
+
+
+<script  src="" th:src="@{js/hamberger.js}"></script>
+
+
+        
+</body>
+
+</html>
